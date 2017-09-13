@@ -1,0 +1,26 @@
+<%= form_tag(controlller:"clients" , action:"new" , method:"get") %>
+<%= label_tag(:name , "name") %>
+<%= text_field_tag(:name) %>
+
+
+<%= label_tag(:description , "description") %>
+<%= text_area_tag(:description) %>
+
+
+
+<%= label_tag(:image , "image") %>
+<%= text_field_tag(:image)  %>
+
+
+<%= check_box_tag(:pet_dog) %>
+<%= label_tag(:pet_dog, "I own a dog") %>
+<%= check_box_tag(:pet_cat) %>
+<%= label_tag(:pet_cat, "I own a cat") %>
+
+
+<%= radio_button_tag(:age, "child") %>
+<%= label_tag(:age_child, "I am younger than 21") %>
+<%= radio_button_tag(:age, "adult") %>
+<%= label_tag(:age_adult, "I'm over 21") %>
+
+<button name="button" type="submit">submit</button>

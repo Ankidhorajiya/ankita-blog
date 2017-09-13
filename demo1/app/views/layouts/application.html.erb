@@ -1,0 +1,36 @@
+<div class="hero-image">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  	<%= stylesheet_link_tag    'application', media: 'all'%>
+  	<%= javascript_include_tag 'application'  %>
+  	<%= csrf_meta_tags %>
+</head>
+<body>
+	<% if notice %>
+  	<p class="alert alert-success"><%= notice %></p>
+	<% end %>
+	<% if alert %>
+ 	 <p class="alert alert-danger"><%= alert %></p>
+	<% end %>
+
+  <nav class="navbar navbar-default">
+	<p class="navbar-text pull-right">
+    <% p  user_session %>
+		<% if current_user.present? %>
+  		Logged in as <strong><%= current_user.email %></strong>.
+  		<%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-primary btn-md' %> 
+  		<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-primary btn-md'  %>
+		<% else %>
+  		<%= link_to "Sign up", new_user_registration_path, :class => 'btn btn-primary btn-md'%> 
+  		<%= link_to "Login", new_user_session_path, :class => 'btn btn-primary btn-md'%>
+		<% end %>
+    <%# binding.pry%>
+  </p>
+  </nav>
+<%= yield %>
+
+</body>
+</html>
+</div>

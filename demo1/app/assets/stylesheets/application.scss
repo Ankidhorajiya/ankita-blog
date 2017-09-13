@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ 
+ *= require_self
+ */
+  @import "bootstrap-sprockets";
+  @import "bootstrap";
+
+
+
+.hero-image {
+    /* The image used */
+    background-image: url("b7.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.btn-default {
+   
+    
+    text-decoration:none;
+    color: blue;
+  	
+  	
+ 		border-color: #ccc;
+
+}
+
+
+h2 {
+    
+    font-size: 1.5em;
+   
+    font-weight: bold;
+}
+
+.alert{
+	padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom:15px;
+  background-color: rgba(237, 243, 242, 0.74);
+
+}
+.navbar{
+  background-color: rgba(237, 243, 242, 0.74);
+  height:40px;
+}
+
+.jumbotron{
+	text-align: center;
+	padding-top: 13px;	
+	padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom:13px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(237, 243, 242, 0.74);
+  
+  width: 658px;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}

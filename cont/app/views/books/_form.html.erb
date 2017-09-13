@@ -1,0 +1,17 @@
+<%= form_tag(controlller:"books" , action:"new" , method:"get") %>
+<%= label_tag(:published_at , "published_at") %>
+
+<%#= date_select :published_at %>
+<%= date_select :books, :published_at %>
+
+
+<%= label_tag(:author_id, "Author") %>
+<%= text_area_tag(:author_id) %>
+
+
+
+
+
+
+
+<button name="button" type="submit"><a href="show">submit</a></button>
